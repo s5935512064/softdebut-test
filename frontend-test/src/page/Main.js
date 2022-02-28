@@ -5,24 +5,16 @@ import Footer from "../components/Footer";
 import banner from "../assets/DT_banner_TH_9.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import Carousel from "../components/Carousel";
-
-const Image = styled.div`
-  background-image: ${(props) => `url(${props.img})`};
-  width: 100%;
-  height: 15%;
-  background-size: contain;
-  background-repeat: no-repeat;
-`;
+import FCarousel from "../components/FCarousel";
+import SCarousel from "../components/SCarousel";
 
 const MainContainer = styled.div`
   width: 100vw;
-  height: 170vh;
+
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  position: absolute;
 `;
 
 const Main = () => {
@@ -50,8 +42,9 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <Carousel />
-      <Carousel />
+      <FCarousel />
+      <SCarousel />
+
       <Footer />
     </MainContainer>
   );

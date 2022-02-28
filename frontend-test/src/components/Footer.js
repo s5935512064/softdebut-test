@@ -23,9 +23,9 @@ const Title = styled.div`
 
 const Footer = () => {
   return (
-    <div className="z-30 w-full absolute bottom-0 left-0">
+    <div className="z-30 w-full bottom-0 left-0">
       <div className="grid grid-row-3">
-        <Bar className="p-4 text-white grid grid-cols-2 justify-between items-center">
+        <Bar className="p-4 px-10 text-white grid grid-cols-2 justify-between items-center">
           <p>ข้อมูลข่าวสาร</p>
 
           <div className="flex justify-end space-x-4">
@@ -43,25 +43,31 @@ const Footer = () => {
             <Title className="font-bold">ช่วยเหลือ</Title>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <li className="list-none">วิธีการสั่งซื้อสินค้า</li>
-                <li className="list-none">วิธีการชำระเงิน</li>
-                <li className="list-none">วิธีการจัดส่งสินค้า</li>
-                <li className="list-none">สถานะคำสั่งซื้อ</li>
-                <li className="list-none">การเปลี่ยนและคืนสินค้า</li>
+                <ul>
+                  <li className="list-none">วิธีการสั่งซื้อสินค้า</li>
+                  <li className="list-none">วิธีการชำระเงิน</li>
+                  <li className="list-none">วิธีการจัดส่งสินค้า</li>
+                  <li className="list-none">สถานะคำสั่งซื้อ</li>
+                  <li className="list-none">การเปลี่ยนและคืนสินค้า</li>
+                </ul>
               </div>
               <div>
-                <li className="list-none">บัญชีของฉัน</li>
-                <li className="list-none">ข้อมูลตารางไซส์</li>
-                <li className="list-none">นโยบายความเป็นส่วนตัว</li>
-                <li className="list-none">ข้อกำหนดและเงื่อนไข</li>
-                <li className="list-none">คำถามที่พบบ่อย</li>
+                <ul>
+                  <li className="list-none">บัญชีของฉัน</li>
+                  <li className="list-none">ข้อมูลตารางไซส์</li>
+                  <li className="list-none">นโยบายความเป็นส่วนตัว</li>
+                  <li className="list-none">ข้อกำหนดและเงื่อนไข</li>
+                  <li className="list-none">คำถามที่พบบ่อย</li>
+                </ul>
               </div>
             </div>
           </div>
           <div className="text-gray-500 p-4 text-center">
             <Title className="font-bold">เกี่ยวกับเรา</Title>
-            <li className="list-none text-left">สาขาของ AIIZ ที่ใกล้คุณ</li>
-            <li className="list-none text-left">ติดต่อเรา</li>
+            <ul>
+              <li className="list-none text-left">สาขาของ AIIZ ที่ใกล้คุณ</li>
+              <li className="list-none text-left">ติดต่อเรา</li>
+            </ul>
             <div className="h-1/2 flex text-center justify-center space-x-2 text-5xl items-end md:text-3xl">
               <FontAwesomeIcon icon={faFacebook} />
               <FontAwesomeIcon icon={faLine} />

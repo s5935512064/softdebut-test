@@ -15,7 +15,7 @@ const Nav = () => {
         </a>
 
         <div className="w-full pl-16">
-          <ul className="flex flex-row space-x-16 ">
+          <ul className="flex flex-row space-x-16 md:text-sm md:space-x-8">
             <li>หน้าหลัก</li>
             <li>ผู้หญิง</li>
             <li>ผู้ชาย</li>
